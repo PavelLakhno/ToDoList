@@ -13,6 +13,7 @@
 		CE31DCF12927751400FEB0EC /* ToDoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE31DCEF2927751400FEB0EC /* ToDoList.xcdatamodeld */; };
 		CE31DCF32927751600FEB0EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE31DCF22927751600FEB0EC /* Assets.xcassets */; };
 		CE31DCF62927751600FEB0EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE31DCF42927751600FEB0EC /* LaunchScreen.storyboard */; };
+		CE31DCFE2927BDB300FEB0EC /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31DCFD2927BDB300FEB0EC /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		CE31DCF22927751600FEB0EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE31DCF52927751600FEB0EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE31DCF72927751600FEB0EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE31DCFD2927BDB300FEB0EC /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		CE31DCE52927751400FEB0EC /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
+				CE31DCFD2927BDB300FEB0EC /* DataManager.swift */,
 				CE31DCE62927751400FEB0EC /* AppDelegate.swift */,
 				CE31DCE82927751400FEB0EC /* SceneDelegate.swift */,
 				CE31DCEA2927751400FEB0EC /* TaskListViewController.swift */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE31DCEB2927751400FEB0EC /* TaskListViewController.swift in Sources */,
+				CE31DCFE2927BDB300FEB0EC /* DataManager.swift in Sources */,
 				CE31DCE72927751400FEB0EC /* AppDelegate.swift in Sources */,
 				CE31DCE92927751400FEB0EC /* SceneDelegate.swift in Sources */,
 				CE31DCF12927751400FEB0EC /* ToDoList.xcdatamodeld in Sources */,
