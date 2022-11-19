@@ -106,15 +106,15 @@ extension TaskListViewController {
         if editingStyle == .delete {
             let task = taskList.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .automatic)
-            DataManager.shared.delete(task)
+            StorageManager.shared.delete(task)
         }
     }
     
 }
-// MARK: Private Methods DataManager
+// MARK: Private Methods StorageManager
 extension TaskListViewController {
     private func create(_ taskName: String) {
-        DataManager.shared.create(taskName) { task in
+        StorageManager.shared.create(taskName) { task in
             taskList.append(task)
             let cellIndex = IndexPath(row: taskList.count - 1, section: 0)
             tableView.insertRows(at: [cellIndex], with: .automatic)
@@ -122,11 +122,11 @@ extension TaskListViewController {
     }
     
     private func update(task: Task,_ taskTitle: String) {
-        DataManager.shared.update(task, title: taskTitle)
+        StorageManager.shared.update(task, title: taskTitle)
     }
     
     private func fetchData() {
-        DataManager.shared.fetchData { tasks in
+        StorageManager.shared.fetchData { tasks in
             taskList = tasks
         }
     }

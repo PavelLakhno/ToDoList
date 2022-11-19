@@ -1,5 +1,5 @@
 //
-//  DataManager.swift
+//  StorageManager.swift
 //  ToDoList
 //
 //  Created by user on 18.11.2022.
@@ -8,9 +8,9 @@
 import Foundation
 import CoreData
 
-class DataManager {
+class StorageManager {
     
-    static let shared = DataManager()
+    static let shared = StorageManager()
     
     private let viewContext: NSManagedObjectContext
     
